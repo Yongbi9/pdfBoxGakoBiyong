@@ -12,12 +12,15 @@ import java.util.ArrayList;
  * @author Lionel
  */
 public class Paragraphe {
-       int index = 0;
-       String name = "";
-
-    public Paragraphe(int index, String name) {
+    int index = 0;
+    private String name = "";
+    private String font;
+    private float size;
+    public Paragraphe(int index, String name, String font, float size) {
         this.index = index;
         this.name = name;
+        this.font = font;
+        this.size = size;
     }
        private ArrayList<Notion> notions = new ArrayList<Notion>();
        public Paragraphe(ArrayList<Notion> notions){
@@ -46,5 +49,21 @@ public class Paragraphe {
 
     public void setNotions(ArrayList<Notion> notions) {
         this.notions = notions;
+    }
+
+    public String getFont() {
+        return font;
+    }
+
+    public void setFont(String font) {
+        this.font = font;
+    }
+
+    public float getSize() {
+        return size;
+    }
+
+    public void setSize(float size) {
+        this.size = size;
     }
 }

@@ -13,13 +13,59 @@ public class Notion {
     private String contenu = null;
     private String type ="";
     private String path="";
-    public Notion(String contenu, String type){
+    private String font;
+    private float size;
+    public Notion(String contenu, String type, String font, float size){
         this.contenu = contenu;
         this.type = type;
+        this.font = font;
+        this.size = size;
     }
-    public Notion(String contenu, String type, String path){
+    public Notion(String contenu, String type, String path, String font, float size){
         this.contenu = contenu;
         this.type = type;
         this.path = path;
+        this.font = font;
+        this.size = size;
+    }
+
+    public String getContenu() {
+        return contenu;
+    }
+
+    public void setContenu(String contenu) {
+        this.contenu = contenu;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public String getFont() {
+        return font;
+    }
+
+    public void setFont(String font) {
+        this.font = font;
+    }
+
+    public float getSize() {
+        return size;
+    }
+
+    public void setSize(float size) {
+        this.size = size;
     }
 }

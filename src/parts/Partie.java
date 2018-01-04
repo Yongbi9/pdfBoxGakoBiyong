@@ -14,10 +14,14 @@ import java.util.ArrayList;
 public class Partie {
    int index = 0;
    private String name = "";
+   private String font;
+   private float size;
    private ArrayList<Chapitre> chapitres = new ArrayList<Chapitre>();
-   public Partie(String name, int index){
+   public Partie(String name, int index, String font, float size){
        this.name = name;
        this.index = index;
+       this.font = font;
+       this.size = size;
    }
 
     public String getName() {
@@ -47,4 +51,20 @@ public class Partie {
       
        this.chapitres = chapitres;
    }
+
+    public String getFont() {
+        return font;
+    }
+
+    public void setFont(String font) {
+        this.font = font;
+    }
+
+    public float getSize() {
+        return size;
+    }
+
+    public void setSize(float size) {
+        this.size = size;
+    }
 }

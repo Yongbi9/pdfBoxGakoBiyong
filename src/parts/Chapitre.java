@@ -13,11 +13,15 @@ import java.util.ArrayList;
  */
 public class Chapitre {
     int index = 0;
-    String name = "";
+    private String name = "";
+    private String font;
+    private float size;
     private ArrayList<Paragraphe> paragraphes = new ArrayList<Paragraphe>();
-    public Chapitre(int index,String name){
+    public Chapitre(int index,String name, String font, float size){
         this.index = index;
         this.name = name;
+        this.font = font;
+        this.size = size;
     }
 
     public int getIndex() {
@@ -42,5 +46,21 @@ public class Chapitre {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getFont() {
+        return font;
+    }
+
+    public void setFont(String font) {
+        this.font = font;
+    }
+
+    public float getSize() {
+        return size;
+    }
+
+    public void setSize(float size) {
+        this.size = size;
     }
 }

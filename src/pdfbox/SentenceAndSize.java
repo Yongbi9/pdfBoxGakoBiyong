@@ -10,16 +10,18 @@ package pdfbox;
  * @author Lionel
  */
 public class SentenceAndSize {
-    String sentence ="";
-    float size = 0;
-    String fontName = "";
-    public SentenceAndSize(float size,String sentence){
+    private String sentence ="";
+    private float size = 0;
+    private String fontName;
+    public SentenceAndSize(float size,String sentence, String fontName){
         this.size = size;
         this.sentence = sentence;
+        this.fontName = fontName;
     }
     public SentenceAndSize(){
         this.size = 0;
         this.sentence = "";
+        this.fontName = "";
     }
 
     public String getSentence() {
